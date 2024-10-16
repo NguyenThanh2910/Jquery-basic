@@ -6,13 +6,50 @@
     <title>Weather Card</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #c3ecff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+        }
+        .form-outline input {
+            font-size: 16px;
+        }
+        .weather-icon {
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        }
+        .weather-details i {
+            color: #007bff;
+        }
+        .details {
+            font-size: 1.1rem;
+        }
+        .city-name {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .temperature {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .status {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .searchInput {
+            font-size: 1rem;
+        }
+    </style>
 </head>
-</head>
-<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh; background-color: #c3ecff;">
+<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
 <div class="container">
     <div class="row d-flex justify-content-center py-5">
         <div class="col-md-8 col-lg-6 col-xl-5">
-            <div class="card text-center shadow-5-strong">
+            <div class="card text-center shadow-5-strong p-4">
                 <div class="card-body">
                     <div class="form-outline mb-4">
                         <input type="text" id="searchInput" class="searchInput form-control" placeholder="Enter city name" />
@@ -20,14 +57,21 @@
                     </div>
                     <h1 class="city-name h3 mb-3">Nam Định</h1>
                    
-                        <h2 class="display-4 mb-3"><span class="temperature">27</span><span>°C</span></h2>
-                        <p class="status text-muted mb-4">Mưa nhẹ</p>
+                    <h2 class="display-4 mb-3">
+                        <span class="temperature">27</span><span>°C</span>
+                    </h2>
+                    <p class="status text-muted mb-4">Mưa nhẹ</p>
              
-
                     <div class="d-flex justify-content-between align-items-center weather-details">
                         <div class="details text-start">
-                            <div class="mb-2"><i class="fas fa-wind"></i> <span class="wind">40</span><span>km/h</span></div>
-                            <div><i class="fas fa-tint"></i> <span class="humidity">84</span><span>%</span></div>
+                            <div class="mb-2">
+                                <i class="fas fa-wind"></i> 
+                                <span class="wind">40</span><span> km/h</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-tint"></i> 
+                                <span class="humidity">84</span><span>%</span>
+                            </div>
                         </div>
                         <div>
                             <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" width="100">
@@ -39,9 +83,12 @@
     </div>
 </div>
 
-</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="./index.js"></script>
+<script src="./index.js">
+
+</script>
+
+</body>
 </html>
