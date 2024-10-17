@@ -35,7 +35,7 @@ body {
 }
 
 /* Weather box styles */
-.temperature {
+.temperature-text {
     font-size: 64px;
     line-height: 1;
     font-weight: 700;
